@@ -1,0 +1,74 @@
+nav#main_nav{
+    padding: 10px 20px 0px;
+    font-size: larger;
+    background-color: lightseagreen;
+}
+nav#main_nav a{
+    font-size: larger;
+    padding-right: 20px;
+    color:#d43a3c;
+    text-shadow: #f7b6b6 1px 1px 2px;
+}
+nav#main_nav a.active{
+    font-weight: bold;
+}
+div[role='tabpanel']{
+    margin: 20px;
+}
+#home-header h1{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+#main-carousel img{
+    border-radius: 10px;
+    height:450px;
+}
+#main-carousel .carousel-indicators{
+    background-color:rgba(128,128,128,0.25);
+}
+div#nav-about{
+    line-height: 2em;
+}
+div#nav-about h1{
+    height:200px;
+    padding-top:40px;
+    background: center / 200px no-repeat url('speech-bubble.png');
+    color:#f499a6;
+    font-size: 72px;
+    font-family:"Brush Script MT", cursive;
+}
+.custom-card{
+    text-align: center;
+}
+.custom-card img{
+    width:150px;
+    border-radius:50%;
+    filter:drop-shadow(2px 2px 10px lightgrey);
+}
+.custom-card p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+}
+.custom-card img:hover{
+    cursor: pointer;
+    filter:none;
+    width:155px;
+}
+div.tab-content{
+    min-height:70vh;
+}
+footer{
+    color:white;
+    padding:20px;
+    background-color: darkred;
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+}
+footer a{
+    color:white;
+}
+footer a:hover{
+    color:white;
+}

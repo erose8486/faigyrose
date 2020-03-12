@@ -100,41 +100,7 @@
     </div>
   </div>
   <div id="nav-contact" class="tab-pane text-center" role="tabpanel">
-  <?php
-$action=$_REQUEST['action'];
-if ($action=="")    /* display the contact form */
-    {
-    ?>
-    <form  action="" method="POST" enctype="multipart/form-data">
-    <input type="hidden" name="action" value="submit">
-    Your name:<br>
-    <input name="name" type="text" value="" size="30"/><br>
-    Your email:<br>
-    <input name="email" type="text" value="" size="30"/><br>
-    Your message:<br>
-    <textarea name="message" rows="7" cols="30"></textarea><br>
-    <input type="submit" value="Send email"/>
-    </form>
-    <?php
-    } 
-else                /* send the submitted data */
-    {
-    $name=$_REQUEST['name'];
-    $email=$_REQUEST['email'];
-    $message=$_REQUEST['message'];
-    if (($name=="")||($email=="")||($message==""))
-        {
-        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-        }
-    else{        
-        $from="From: $name<$email>\r\nReturn-path: $email";
-        $subject="Message sent using your contact form";
-        mail("erosenberg8486@gmail.com", $subject, $message, $from);
-        echo "Email sent!";
-        }
-    }  
-?>
-    <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfuEJJVy4TvgpSpcP_zBreFT-V1drjpo_TrL6X2TnkUP3CyDQ/viewform?embedded=true" style="width:75vw" height='750' frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  </div>-->
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfuEJJVy4TvgpSpcP_zBreFT-V1drjpo_TrL6X2TnkUP3CyDQ/viewform?embedded=true" style="width:75vw" height='750' frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  </div>
   </div>
   <footer id="footer">
     <div id="contactInfo">

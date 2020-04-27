@@ -1,0 +1,136 @@
+$primaryPink:#f7b6b6;
+
+nav#main_nav{
+    padding: 10px 20px 0px;
+    font-size: larger;
+    background-color: #D676FF;
+    a{
+        font-size: larger;
+        padding-right: 20px;
+        color:#d43a3c;
+        text-shadow: $primaryPink 1px 1px 2px;
+    }
+    a.active{
+        font-weight: bold;
+    }
+}
+div[role='tabpanel']{
+    margin: 20px;
+}
+#home-header {
+    h1{
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    }
+    h2{
+        font-family: 'Righteous', cursive;
+    }
+}
+#main-carousel{
+    img{
+        border-radius: 10px;
+    }
+    .carousel-indicators{
+        background-color:rgba(128,128,128,0.25);
+    }
+} 
+div#nav-about{
+    line-height: 2em;
+    h1{
+        height:200px;
+        padding-top:40px;
+        background: center / 200px no-repeat url('speech-bubble.png');
+        color:$primaryPink;
+        font-size: 72px;
+        font-family:"Brush Script MT", cursive;
+    }
+}
+div#nav-contact::after {
+    content: "";
+    background: url('skyline4.jpg');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom:-300px;
+    right:0;
+    position: absolute;
+    z-index: -1;   
+}
+.custom-card{
+    text-align: center;
+    img{
+        width:150px;
+        border-radius:50%;
+        filter:drop-shadow(2px 2px 10px lightgrey);
+        &:hover{
+            cursor: pointer;
+            filter:none;
+            width:155px;
+        }
+    }
+    p{
+        font-size: 18px;
+        font-weight: bold;
+        font-family: monaco, Consolas, "Lucida Console", monospace;
+    }
+}
+
+img.images{
+    max-height:45vh;
+    box-shadow: inset 1px 1px 5px grey;
+}
+div.tab-content{
+    min-height:70vh;
+}
+footer{
+    color:white;
+    padding:20px 0px 0px;
+    background-color: darkred;
+    font-size: 18px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    div#contactInfo{
+        display:flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    a{
+        color:white;
+        &:hover{
+            color:white;
+        }
+    }
+}
+
+#options{
+    margin-bottom:10px;
+}
+.zoom{
+    width:30px;
+    font-size:24px;
+    text-shadow: white 2px 2px;
+	position: absolute;
+	left:50%;
+	top: 40% ;
+    display: none; 
+}
+.photos:hover{
+    img{
+        cursor:pointer;
+        filter:blur(2px);
+    }
+    .zoom{
+        display:block;
+    }
+}
+@mixin arrows {
+    position:fixed;
+    top:40%;
+    border-radius: 50%;
+}
+#nextArrow{
+    @include arrows;
+    right:10%;
+}
+#prevArrow{
+    @include arrows;
+    left:10%;
+}

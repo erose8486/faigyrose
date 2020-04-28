@@ -69,7 +69,7 @@
   </div>
   <div id="nav-about" class="tab-pane text-center" role="tabpanel">
     <h1>HI!</h1>
-    <h3>My name is Faigy Rosenberg, I’m a still-life photographer from Brooklyn.</h3>
+    <h3>My name is Faigy Rosenberg, I’m a still-life photographer from <span style="text-decoration:line-through;font-weight:normal">Brooklyn</span> Montebello. &#128521;</h3>
     <p>My passion for photography started at a young age when I received my first disposable camera at age 9.<br>
        Since then I have been photographing everything in sight.<br>
        I took my photography to the next level when I joined NYIP and graduated in 2016.<br>
@@ -99,12 +99,21 @@
       </div>
     </div>
   </div>
-  <div id="nav-contact" class="tab-pane text-center" role="tabpanel">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfuEJJVy4TvgpSpcP_zBreFT-V1drjpo_TrL6X2TnkUP3CyDQ/viewform?embedded=true" style="width:75vw" height='750' frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  </div>
+  <div id="nav-contact" class="tab-pane" role="tabpanel">
+    <div class="row">
+      <div class="col-md-6" id="right-col">
+        <p><a href="https://www.instagram.com/faigyrosephotography/" target="_blank"><i class="fab fa-instagram"></i> Faigyrosephotography</a></p>
+        <p><a href="mailto:faigyrosephotography@gmail.com"><i class="fas fa-at"></i> faigyrosephotography@gmail.com</a></p>
+        <p><a href="tel:17189284043"><i class="fas fa-phone-alt"></i> 718-928-4043</a></p>
+      </div>
+      <div class="col-md-6">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfuEJJVy4TvgpSpcP_zBreFT-V1drjpo_TrL6X2TnkUP3CyDQ/viewform?embedded=true" width="100%" height='750' frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  </div>
+      </div>
+    </div>
   </div>
   <footer id="footer">
     <div id="contactInfo">
-    <span><a href="https://www.instagram.com/faigyrosephotography/"><i class="fab fa-instagram"></i> Faigyrosephotography</a></span>
+    <span><a href="https://www.instagram.com/faigyrosephotography/" target="_blank"><i class="fab fa-instagram"></i> Faigyrosephotography</a></span>
     <span><a href="mailto:faigyrosephotography@gmail.com"><i class="fas fa-at"></i> faigyrosephotography@gmail.com</a></span>
     <span><a href="tel:17189284043"><i class="fas fa-phone-alt"></i> 718-928-4043</a></span>
     </div>

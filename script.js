@@ -42,3 +42,7 @@ var ViewModel = function(){
 }
 var vm = new ViewModel();
 ko.applyBindings(vm);
+$(document).ready(function(){
+    console.log('loaded');
+    $("#moved").modal('show');
+});

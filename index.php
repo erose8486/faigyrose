@@ -129,5 +129,19 @@
       </div></div>
     </div>
   </div>
+  <div class="modal fade" id="moved">
+    <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <img src="map.svg" width="50%">
+        <h2 style="color:#d43a3c">We Moved!</h2>
+        <h5>Now located in Montebello, NY</h5>
+      </div>
+    </div>
+    </div>
+  </div>
 </body>
 </html>

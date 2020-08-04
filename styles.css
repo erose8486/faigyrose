@@ -1,22 +1,37 @@
 nav#main_nav {
-  padding: 10px 20px 0px;
+  padding: 10px 20px;
   font-size: larger;
   background-color: #D676FF;
 }
 
 nav#main_nav a {
+  width: 125px;
   font-size: larger;
   padding-right: 20px;
   color: #d43a3c;
   text-shadow: #f7b6b6 1px 1px 2px;
 }
 
+nav#main_nav a:hover {
+  font-weight: bold;
+}
+
 nav#main_nav a.active {
   font-weight: bold;
+  text-shadow: none;
 }
 
 div[role='tabpanel'] {
   margin: 20px;
+}
+
+#home-header {
+  z-index: 99;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #home-header h1 {

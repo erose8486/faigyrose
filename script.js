@@ -42,7 +42,22 @@ var ViewModel = function(){
 }
 var vm = new ViewModel();
 ko.applyBindings(vm);
+
+function navigate(){
+    $('.tab-pane').hide();
+    $('.nav-item').removeClass('active')
+    var hash = window.location.hash;
+    if(!hash){
+        hash = '#nav-home'
+    }
+    $(hash).show();
+    $('#nav-tab .nav-item[href="'+hash+'"]').addClass('active')
+}
+$(window).bind( 'hashchange', function(){
+    navigate()
+})
 $(document).ready(function(){
     console.log('loaded');
     $("#moved").modal('show');
+    navigate();
 });

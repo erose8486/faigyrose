@@ -1,23 +1,33 @@
 $primaryPink:#f7b6b6;
 
 nav#main_nav{
-    padding: 10px 20px 0px;
+    padding: 10px 20px;
     font-size: larger;
     background-color: #D676FF;
     a{
+        width:125px;
         font-size: larger;
         padding-right: 20px;
         color:#d43a3c;
         text-shadow: $primaryPink 1px 1px 2px;
+        &:hover{
+            font-weight: bold;
+        }
     }
     a.active{
         font-weight: bold;
+        text-shadow:none;
     }
 }
 div[role='tabpanel']{
     margin: 20px;
 }
 #home-header {
+    z-index: 99;
+    position:absolute;
+    top:200px;
+    left:50%;
+    transform:translateX(-50%);
     h1{
         font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     }

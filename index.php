@@ -24,18 +24,17 @@
 </head>
 <body>
 
-  <nav id="main_nav">
-    <div class="text-center"><img src="logo.png" width="200px" ></div>
-    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">Home</a>
-      <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="true">About</a>
-      <a class="nav-item nav-link" id="nav-portfolio-tab" data-toggle="tab" href="#nav-portfolio" role="tab" aria-controls="nav-portfolio" aria-selected="false">Portfolio</a>
-      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-    </div>
+  <nav id="main_nav" class="clearfix">
+    <a class="float-left"href="#nav-home"><img src="logo.png" width="200px" ></a>
+    <div class="float-right"><div class="nav" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link" id="nav-home-tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+      <a class="nav-item nav-link" id="nav-about-tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
+      <a class="nav-item nav-link" id="nav-portfolio-tab" href="#nav-portfolio" role="tab" aria-controls="nav-portfolio" aria-selected="false">Portfolio</a>
+      <a class="nav-item nav-link" id="nav-contact-tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+    </div></div>
   </nav>
   <div class="tab-content">
-  <div id="nav-home" class="tab-pane active clearfix row" role="tabpanel">
-    <div class="col-xs-12 col-md-6 float-left">
+  <div id="nav-home" class="tab-pane clearfix row" role="tabpanel">
       <div class="text-center" id="home-header">
       <h1>Still Life Photography <i class="fas fa-camera"></i></h1>
       <h2>Make a statement without saying a word</h2>
@@ -61,13 +60,6 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-5 float-right text-center">
-      <a href="https://www.instagram.com/faigyrosephotography/"><img src="insta.jpg" style="width:35%"></a>
-      <div style="height:800px;overflow:auto">
-      <div class='embedsocial-instagram' data-ref="de74584717c54c0ee29e2a8f0f8ae6150c46b84f"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
-      </div>
-    </div>
-  </div>
   <div id="nav-about" class="tab-pane text-center" role="tabpanel">
     <h1>HI!</h1>
     <h3>My name is Faigy Rosenberg, I’m a still-life photographer from <span style="text-decoration:line-through;font-weight:normal">Brooklyn</span> Montebello. &#128521;</h3>

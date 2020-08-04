@@ -17,7 +17,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
   <script src="https://kit.fontawesome.com/a2030581f8.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
-  <script src="jquery.lazy.min.js"></script>
 
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -34,11 +33,8 @@
     </div></div>
   </nav>
   <div class="tab-content">
-  <div id="nav-home" class="tab-pane clearfix row" role="tabpanel">
-      <div class="text-center" id="home-header">
-      <h1>Still Life Photography <i class="fas fa-camera"></i></h1>
-      <h2>Make a statement without saying a word</h2>
-      </div>
+  <div id="nav-home" class="tab-pane" role="tabpanel"><div class="row">
+      <div class="col-md-7">
       <div id="main-carousel" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
@@ -59,7 +55,18 @@
           </div>
         </div>
       </div>
+      </div>
+      <div class="col-md-4 text-center" id="home-header">
+      <h1>Still Life Photography <br> <i class="fas fa-camera"></i></h1>
+      <h2>Make a statement without saying a word</h2>
+      </div>
+      <div class="col-md-1" id="social-tab">
+        <a href="https://www.instagram.com/faigyrosephotography/"><i class="fas fa-envelope-open-text"></i></a>
+        <a href="mailto:faigyrosephotography@gmail.com"><img src="insta.png" alt="instagram"></a>
+        <a href="https://www.yelp.com/biz/faigyrose-photography-montebello"><img src="yelp.png" alt="yelp"></a>
+      </div>
     </div>
+  </div>
   <div id="nav-about" class="tab-pane text-center" role="tabpanel">
     <h1>HI!</h1>
     <h3>My name is Faigy Rosenberg, I’m a still-life photographer from <span style="text-decoration:line-through;font-weight:normal">Brooklyn</span> Montebello. &#128521;</h3>
@@ -110,7 +117,7 @@
     <span><a href="mailto:faigyrosephotography@gmail.com"><i class="fas fa-at"></i> faigyrosephotography@gmail.com</a></span>
     <span><a href="tel:17189284043"><i class="fas fa-phone-alt"></i> 718-928-4043</a></span>
     </div>
-    <p class="text-center" style="padding:5px"><small>© 2020 EstyRose</small></p>
+    <p class="text-center" style="padding:5px; margin:0"><small>© 2020 EstyRose</small></p>
   </footer>
   <div class="modal" id="singleImg">
     <div class="modal-dialog modal-lg">

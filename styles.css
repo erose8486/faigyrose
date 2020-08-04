@@ -26,28 +26,47 @@ div[role='tabpanel'] {
 }
 
 #home-header {
-  z-index: 99;
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  padding-top: 10%;
+  background: center/550px no-repeat url(blob-2.svg);
 }
 
 #home-header h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-}
-
-#home-header h2 {
-  font-family: 'Righteous', cursive;
-}
-
-#main-carousel img {
-  border-radius: 10px;
+  font-weight: bold;
 }
 
 #main-carousel .carousel-indicators {
   background-color: rgba(128, 128, 128, 0.25);
+}
+
+#social-tab {
+  font-size: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  background-color: grey;
+  -webkit-box-shadow: -2px 2px 10px lightgrey;
+          box-shadow: -2px 2px 10px lightgrey;
+  border-radius: 10px 0px 0px 10px;
+  width: 2em;
+  padding: 20px 10px 20px 20px;
+}
+
+#social-tab img {
+  width: 1em;
+}
+
+#social-tab i {
+  color: darkblue;
+  background-color: white;
+  border-radius: 25%;
 }
 
 div#nav-about {

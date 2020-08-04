@@ -61,3 +61,5 @@ $(document).ready(function(){
     $("#moved").modal('show');
     navigate();
 });
+const observer = lozad(); // lazy loads elements with default selector as ".lozad"
+observer.observe();

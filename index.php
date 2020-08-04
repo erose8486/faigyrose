@@ -17,6 +17,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
   <script src="https://kit.fontawesome.com/a2030581f8.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lozad" defer></script>
 
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -94,7 +95,7 @@
     </div>
     <div data-bind="foreach:visible" class="gallery">
       <div class="photos" data-bind="click:$root.single">
-        <img data-bind="attr:{src:$data}" class="images lazy" data-toggle="modal" data-target="#singleImg">
+        <img data-bind="attr:{'data-src':$data}" class="images lozad" data-toggle="modal" data-target="#singleImg">
         <i class="fas fa-search-plus zoom" data-bind="click:$root.single"></i>
       </div>
     </div>

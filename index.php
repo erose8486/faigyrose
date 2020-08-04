@@ -17,6 +17,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
   <script src="https://kit.fontawesome.com/a2030581f8.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <script src="jquery.lazy.min.js"></script>
 
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -51,10 +52,10 @@
             <div class="carousel-caption d-none d-lg-block">
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" class="lazy">
             <img src="l17.jpg" class="d-block w-100">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" class="lazy">
             <img src="skyline5.jpg" class="d-block w-100">
           </div>
         </div>
@@ -92,9 +93,9 @@
         <p>ALL</p>
       </div>
     </div>
-    <div data-bind="foreach:visible" class="row">
-      <div class="col-md-3 col-sm-2 photos" data-bind="click:$root.single">
-        <img data-bind="attr:{src:$data}" class="images" data-toggle="modal" data-target="#singleImg">
+    <div data-bind="foreach:visible" class="gallery">
+      <div class="photos" data-bind="click:$root.single">
+        <img data-bind="attr:{src:$data}" class="images lazy" data-toggle="modal" data-target="#singleImg">
         <i class="fas fa-search-plus zoom" data-bind="click:$root.single"></i>
       </div>
     </div>

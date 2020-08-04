@@ -78,11 +78,36 @@ div#nav-contact{
         font-family: monaco, Consolas, "Lucida Console", monospace;
     }
 }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    .photos {
+        height: 200px;
+        line-height: 200px;
+        margin: 0 1rem 1rem 0;
+        text-align: center;
+        font-family: system-ui;
+        font-weight: 900;
+        font-size: 2rem;
+        flex: 1 0 auto;
+        position:relative;
+        img{
+            height: 200px;
+            box-shadow: 1px 1px 10px lightgrey
+        }
+        &:hover{
+            img{
+                cursor:pointer;
+                filter:blur(2px);
+            }
+            .zoom{
+                display:block;
+            }
+        }
+    } 
+  }
 
-img.images{
-    max-height:45vh;
-    box-shadow: inset 1px 1px 5px grey;
-}
+  
 div.tab-content{
     min-height:70vh;
 }
@@ -116,15 +141,6 @@ footer{
 	left:50%;
 	top: 40% ;
     display: none; 
-}
-.photos:hover{
-    img{
-        cursor:pointer;
-        filter:blur(2px);
-    }
-    .zoom{
-        display:block;
-    }
 }
 @mixin arrows {
     position:fixed;

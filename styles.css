@@ -89,10 +89,42 @@ div#nav-contact #right-col p a {
   font-family: monaco, Consolas, "Lucida Console", monospace;
 }
 
-img.images {
-  max-height: 45vh;
-  -webkit-box-shadow: inset 1px 1px 5px grey;
-          box-shadow: inset 1px 1px 5px grey;
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery .photos {
+  height: 200px;
+  line-height: 200px;
+  margin: 0 1rem 1rem 0;
+  text-align: center;
+  font-family: system-ui;
+  font-weight: 900;
+  font-size: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  position: relative;
+}
+
+.gallery .photos img {
+  height: 200px;
+  -webkit-box-shadow: 1px 1px 10px lightgrey;
+          box-shadow: 1px 1px 10px lightgrey;
+}
+
+.gallery .photos:hover img {
+  cursor: pointer;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.gallery .photos:hover .zoom {
+  display: block;
 }
 
 div.tab-content {
@@ -138,16 +170,6 @@ footer a:hover {
   left: 50%;
   top: 40%;
   display: none;
-}
-
-.photos:hover img {
-  cursor: pointer;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-}
-
-.photos:hover .zoom {
-  display: block;
 }
 
 #nextArrow {

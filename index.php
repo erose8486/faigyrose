@@ -19,8 +19,8 @@
   <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lozad" defer></script>
 
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=1.0">
+  <script src="script.js?v=1.0.1" defer></script>
 </head>
 <body>
 

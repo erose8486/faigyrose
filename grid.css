@@ -1,0 +1,116 @@
+@media screen and (max-width: 767px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 12fr 1fr;
+        gap: 1em 0.5em;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 2fr 2fr 1fr 2fr 2fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "headline"
+            "photo1"
+            "photo2"
+            "link1"
+            "photo3"
+            "photo4"
+            "link2";
+        grid-area: main;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-rows: 2fr 3fr 3fr 3fr 1fr;
+        gap: 2em 0.5em;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "main main main"
+            "main main main"
+            "footer footer footer";
+    }
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px 5px;
+        grid-template-areas:
+            "photo1 headline"
+            "link1 photo2"
+            "photo3 link2";
+        grid-area: main;
+    }
+    .flip-card img{
+        max-height:100%;
+        margin:auto;
+        object-fit: cover;
+    }
+}
+@media screen and (min-width: 1001px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
+        grid-template-rows: 2fr 3fr 3fr 3fr 1fr;
+        gap: 2em 0.5em;
+        grid-template-areas:
+            "header header header header header"
+            ". main main main ."
+            ". main main main ."
+            ". main main main ."
+            "footer footer footer footer footer";
+    }
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 15px 10px;
+        grid-template-areas:
+            "photo1 headline"
+            "photo1 photo2"
+            "link1 photo2"
+            "photo3 link2";
+        grid-area: main;
+    }
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . ."
+        ". logo ."
+        ". . .";
+    grid-area: header;
+}
+
+.logo { grid-area: logo; }
+
+.gallery { grid-area: main; }
+.contact { grid-area: main; }
+
+.footer { grid-area: footer; }
+
+.photo1 { grid-area: photo1; }
+
+.headline { grid-area: headline; }
+
+.photo2 { grid-area: photo2; }
+
+.link1 { grid-area: link1; }
+
+.photo4 { grid-area: photo4; }
+
+.photo3 { grid-area: photo3; }
+
+.link2 { grid-area: link2; }

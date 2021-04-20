@@ -18,8 +18,16 @@
   <script src="script.js?v=1.0.1"></script>
 </head>
 <body>
+  <div id="menu" class="menu">
+    <div class="menu-content">
+      <a href="index.php" id="home-link">Home</a>
+      <a href="portfolio.php" id="portfolio-link">Portfolio</a>
+      <a href="contact.php" id="contact-link">Contact</a>
+    </div>
+  </div>
 
   <div class="grid-container">
     <div class="header">
-      <div class="logo"></div>
+      <div class="logo"><div style="margin:auto; width:30%"><img src="logo.svg" width='100%' style="filter: drop-shadow(1px 1px 0px #40422f);" alt="faigy rose photography logo"></div></div>
+      <div class="burger"><a class="menuBtn" onclick='$("#menu, .menuBtn").toggleClass("open");'></a></div>
     </div>

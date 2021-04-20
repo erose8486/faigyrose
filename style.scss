@@ -62,34 +62,6 @@ body{
   }
 }
 
-@media screen and (max-width: 767px){
-  .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 200px);
-    grid-auto-flow: dense;
-  }
-}
-@media screen and (min-width: 768px){
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(6, 200px);
-    grid-gap: 1rem;
-    grid-auto-flow: dense;
-  }
-}
-  
-.gallery > div:nth-child(4n) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.gallery > div:nth-child(8n) {
-  grid-column: span 3;
-  grid-row: span 3;
-}
-
 .gallery > div > figure {
   height: 100%;
   margin: 0;
@@ -167,4 +139,66 @@ body.popover{
     font-size: 0.9em;
     margin-left: 1ch;
   }
+}
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+      &:hover, &:focus{
+          color: #f1f1f1;
+      }
+  }
+  .menu-content {
+      font-family: 'Lexend Peta', sans-serif;
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+  }
+}
+.menu.open{
+  width:100%;
+}
+@media screen and (min-width: 768px){
+  .menu.open{
+      width:50%;
+  }
+}
+.menuBtn:after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  content:'\f0c9';
+  position: sticky;
+  top: 20px;
+  left: 90vw;
+  font-size: 2em;
+  cursor:pointer;
+  color: #818181;
+  z-index:2;
+}
+.menuBtn.open:hover:after{
+  color: #f1f1f1;
+}
+.menuBtn.open:after {
+  content:'\f00d';
+}
+#menu a.active:before {
+  content: '\21D2';
 }
